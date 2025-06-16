@@ -5,6 +5,8 @@ title: mcp_kit.generators
 
 ## ResponseGenerator
 
+## LlmAuthenticationError
+
 ## LlmResponseGenerator
 
 ## RandomResponseGenerator

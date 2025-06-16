@@ -23,6 +23,8 @@ title: mcp_kit.targets.mocked
 
 ## create\_target\_from\_config
 
+## LlmAuthenticationError
+
 ## ResponseGenerator
 
 ## Target

@@ -5,6 +5,8 @@ title: mcp_kit.generators.llm
 
 ## Any
 
+## litellm
+
 ## acompletion
 
 ## AuthenticationError
@@ -24,8 +26,6 @@ title: mcp_kit.generators.llm
 ## Self
 
 ## ResponseGenerator
-
-### DEFAULT\_RESPONSE\_GENERATOR\_LLM
 
 ## LlmAuthenticationError
 
