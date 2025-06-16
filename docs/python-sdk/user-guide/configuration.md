@@ -204,12 +204,12 @@ if not is_valid:
 
 ## Examples
 
-See the [examples directory](../examples/) for real-world configuration examples:
+See the [examples directory](https://github.com/your-org/mcp-kit-python/tree/main/examples) for real-world configuration examples:
 
-- [Basic MCP Proxy](../examples/proxy_configs/mcp_target.yaml)
-- [OpenAPI Integration](../examples/proxy_configs/oas_target.yaml)  
-- [Multi-target Setup](../examples/proxy_configs/multiplex_target.yaml)
-- [Testing with Mocks](../examples/proxy_configs/mocked_random_target.yaml)
+- [Basic MCP Proxy](https://github.com/your-org/mcp-kit-python/blob/main/examples/proxy_configs/mcp_target.yaml)
+- [OpenAPI Integration](https://github.com/your-org/mcp-kit-python/blob/main/examples/proxy_configs/oas_target.yaml)  
+- [Multi-target Setup](https://github.com/your-org/mcp-kit-python/blob/main/examples/proxy_configs/multiplex_target.yaml)
+- [Testing with Mocks](https://github.com/your-org/mcp-kit-python/blob/main/examples/proxy_configs/mocked_random_target.yaml)
 
 ## Next Steps
 

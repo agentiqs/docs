@@ -66,4 +66,4 @@ MCP Kit follows a modular architecture:
 - [Configuration](./configuration.md) - Learn about proxy configs
 - [Adapters](./adapters.md) - Framework integrations  
 - [Examples](./examples.md) - Real-world usage examples
-- [API Reference](../python-sdk/reference/) - Complete API documentation
+- [API Reference](../reference/) - Complete API documentation

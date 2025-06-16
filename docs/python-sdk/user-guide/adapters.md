@@ -264,11 +264,11 @@ mcp_tools = MCPToolNode(
 
 Complete examples using each adapter:
 
-- [OpenAI Integration Example](../examples/openai_agents_sdk/)
-- [LangGraph Workflow Example](../examples/langgraph/)
-- [Client Session Example](../examples/mcp_client_session/)
+- [OpenAI Integration Example](https://github.com/your-org/mcp-kit-python/tree/main/examples/openai_agents_sdk)
+- [LangGraph Workflow Example](https://github.com/your-org/mcp-kit-python/tree/main/examples/langgraph)
+- [Client Session Example](https://github.com/your-org/mcp-kit-python/tree/main/examples/mcp_client_session)
 
 ## Next Steps
 
 - [Examples](./examples.md) - Try complete working examples
-- [API Reference](../python-sdk/reference/) - Detailed API documentation
+- [API Reference](../reference/) - Detailed API documentation

@@ -516,6 +516,6 @@ python mcp_client_session/main.py
 
 ## Next Steps
 
-- Explore the [examples directory](../examples/) for complete, runnable code
-- Check out [proxy configurations](../examples/proxy_configs/) for more config examples
-- Read the [API Reference](../python-sdk/reference/) for detailed documentation
+- Explore the [examples directory](https://github.com/your-org/mcp-kit-python/tree/main/examples) for complete, runnable code
+- Check out [proxy configurations](https://github.com/your-org/mcp-kit-python/tree/main/examples/proxy_configs) for more config examples
+- Read the [API Reference](../reference/) for detailed documentation
