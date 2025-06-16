@@ -9,11 +9,7 @@ title: mcp_kit.generators.interfaces
 
 ## Tool
 
-## EmbeddedResource
-
-## ImageContent
-
-## TextContent
+## Content
 
 ## ConfigurableMixin
 
@@ -29,11 +25,9 @@ Interface for generating response data for an MCP call_tool
 
 ```python
 @abstractmethod
-async def generate(
-    target_name: str,
-    tool: Tool,
-    arguments: dict[str, Any] | None = None
-) -> list[TextContent | ImageContent | EmbeddedResource]
+async def generate(target_name: str,
+                   tool: Tool,
+                   arguments: dict[str, Any] | None = None) -> list[Content]
 ```
 
 Generate an MCP call tool response.

@@ -9,19 +9,15 @@ title: mcp_kit.targets.mocked
 
 ## Any
 
-## Self
-
-## EmbeddedResource
-
-## ImageContent
-
-## TextContent
+## Content
 
 ## Tool
 
 ## DictConfig
 
 ## OmegaConf
+
+## Self
 
 ## create\_response\_generator\_from\_config
 
@@ -30,6 +26,8 @@ title: mcp_kit.targets.mocked
 ## ResponseGenerator
 
 ## Target
+
+### logger
 
 ## MockConfig
 
@@ -85,10 +83,8 @@ async def list_tools() -> list[Tool]
 ### call\_tool
 
 ```python
-async def call_tool(
-    name: str,
-    arguments: dict[str, Any] | None = None
-) -> list[TextContent | ImageContent | EmbeddedResource]
+async def call_tool(name: str,
+                    arguments: dict[str, Any] | None = None) -> list[Content]
 ```
 
 ### close

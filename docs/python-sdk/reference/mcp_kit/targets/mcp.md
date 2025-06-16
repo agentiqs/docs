@@ -7,21 +7,17 @@ title: mcp_kit.targets.mcp
 
 ## Any
 
-## Self
-
 ## Tool
 
-## EmbeddedResource
-
-## ImageContent
-
-## TextContent
+## Content
 
 ## DictConfig
 
-## http\_streamable\_session
+## Self
 
 ## create\_tools\_from\_config
+
+## http\_streamable\_session
 
 ## Target
 
@@ -70,10 +66,8 @@ async def list_tools() -> list[Tool]
 ### call\_tool
 
 ```python
-async def call_tool(
-    name: str,
-    arguments: dict[str, Any] | None = None
-) -> list[TextContent | ImageContent | EmbeddedResource]
+async def call_tool(name: str,
+                    arguments: dict[str, Any] | None = None) -> list[Content]
 ```
 
 ### close

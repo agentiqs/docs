@@ -9,9 +9,9 @@ Mixins for configurable classes in the mcp_kit package.
 
 ## abstractmethod
 
-## Self
-
 ## DictConfig
+
+## Self
 
 ## ConfigurableMixin
 

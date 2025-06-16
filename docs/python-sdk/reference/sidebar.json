@@ -37,6 +37,7 @@
         "mcp_kit/__init__",
         "mcp_kit/factory",
         "mcp_kit/mixins",
+        "mcp_kit/patch_mcp",
         "mcp_kit/proxy"
       ],
       "label": "mcp_kit",

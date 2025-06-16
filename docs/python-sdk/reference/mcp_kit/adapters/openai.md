@@ -7,8 +7,6 @@ title: mcp_kit.adapters.openai
 
 ## Any
 
-## MCPServer
-
 ## Tool
 
 ## CallToolResult
@@ -22,7 +20,7 @@ title: mcp_kit.adapters.openai
 ## OpenAIMCPServerAdapter
 
 ```python
-class OpenAIMCPServerAdapter(MCPServer)
+class OpenAIMCPServerAdapter()
 ```
 
 ### connect

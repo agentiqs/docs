@@ -9,11 +9,7 @@ title: mcp_kit.targets.interfaces
 
 ## Tool
 
-## EmbeddedResource
-
-## ImageContent
-
-## TextContent
+## Content
 
 ## ConfigurableMixin
 
@@ -49,10 +45,8 @@ async def list_tools() -> list[Tool]
 
 ```python
 @abstractmethod
-async def call_tool(
-    name: str,
-    arguments: dict[str, Any] | None = None
-) -> list[TextContent | ImageContent | EmbeddedResource]
+async def call_tool(name: str,
+                    arguments: dict[str, Any] | None = None) -> list[Content]
 ```
 
 ### close

@@ -5,23 +5,35 @@ title: mcp_kit.generators.llm
 
 ## Any
 
-## Self
+## acompletion
+
+## AuthenticationError
+
+## Choices
+
+## ModelResponse
 
 ## Tool
 
-## EmbeddedResource
-
-## ImageContent
+## Content
 
 ## TextContent
 
 ## DictConfig
 
-## Agent
-
-## Runner
+## Self
 
 ## ResponseGenerator
+
+### DEFAULT\_RESPONSE\_GENERATOR\_LLM
+
+## LlmAuthenticationError
+
+```python
+class LlmAuthenticationError(Exception)
+```
+
+Base class for LLM authentication errors.
 
 ## LlmResponseGenerator
 
@@ -51,11 +63,9 @@ LLMResponseGenerator instance
 ### generate
 
 ```python
-async def generate(
-    target_name: str,
-    tool: Tool,
-    arguments: dict[str, Any] | None = None
-) -> list[TextContent | ImageContent | EmbeddedResource]
+async def generate(target_name: str,
+                   tool: Tool,
+                   arguments: dict[str, Any] | None = None) -> list[Content]
 ```
 
 Generate mock response using the LLM agent.

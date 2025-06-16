@@ -5,31 +5,25 @@ title: mcp_kit.proxy
 
 ## logging
 
+## AsyncIterator
+
+## Iterable
+
 ## asynccontextmanager
 
 ## Path
 
 ## Any
 
-## AsyncIterator
-
-## Iterable
-
-## Self
-
-## MCPServer
-
 ## Tool
 
 ## Server
 
-## EmbeddedResource
-
-## ImageContent
-
-## TextContent
+## Content
 
 ## OmegaConf
+
+## Self
 
 ## ClientSessionAdapter
 
@@ -77,7 +71,7 @@ async def as_client_session_adapter() -> AsyncIterator
 
 ```python
 @asynccontextmanager
-async def as_openai_agents_mcp_server() -> AsyncIterator[MCPServer]
+async def as_openai_agents_mcp_server() -> AsyncIterator
 ```
 
 Convert the target to an OpenAI Agents MCP server.

@@ -7,21 +7,17 @@ title: mcp_kit.targets.multiplex
 
 ## Any
 
-## Self
-
 ## ErrorData
 
 ## McpError
 
-## EmbeddedResource
-
-## ImageContent
-
-## TextContent
+## Content
 
 ## Tool
 
 ## DictConfig
+
+## Self
 
 ## create\_target\_from\_config
 
@@ -72,10 +68,8 @@ async def list_tools() -> list[Tool]
 ### call\_tool
 
 ```python
-async def call_tool(
-    name: str,
-    arguments: dict[str, Any] | None = None
-) -> list[TextContent | ImageContent | EmbeddedResource]
+async def call_tool(name: str,
+                    arguments: dict[str, Any] | None = None) -> list[Content]
 ```
 
 ### close

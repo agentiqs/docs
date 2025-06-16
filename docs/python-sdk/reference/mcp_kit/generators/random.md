@@ -9,17 +9,15 @@ title: mcp_kit.generators.random
 
 ## Any
 
-## Self
-
 ## Tool
 
-## EmbeddedResource
-
-## ImageContent
+## Content
 
 ## TextContent
 
 ## DictConfig
+
+## Self
 
 ## ResponseGenerator
 
@@ -51,11 +49,9 @@ RandomResponseGenerator instance
 ### generate
 
 ```python
-async def generate(
-    target_name: str,
-    tool: Tool,
-    arguments: dict[str, Any] | None = None
-) -> list[TextContent | ImageContent | EmbeddedResource]
+async def generate(target_name: str,
+                   tool: Tool,
+                   arguments: dict[str, Any] | None = None) -> list[Content]
 ```
 
 Generate an MCP call tool response.

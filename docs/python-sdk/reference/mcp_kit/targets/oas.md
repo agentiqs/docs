@@ -7,8 +7,6 @@ title: mcp_kit.targets.oas
 
 ## Any
 
-## Self
-
 ## click
 
 ## uvicorn
@@ -23,15 +21,13 @@ title: mcp_kit.targets.oas
 
 ## LifespanContextT
 
-## EmbeddedResource
-
-## ImageContent
-
-## TextContent
+## Content
 
 ## DictConfig
 
 ## create\_mcp\_server
+
+## Self
 
 ## Target
 
@@ -80,10 +76,8 @@ async def list_tools() -> list[Tool]
 ### call\_tool
 
 ```python
-async def call_tool(
-    name: str,
-    arguments: dict[str, Any] | None = None
-) -> list[TextContent | ImageContent | EmbeddedResource]
+async def call_tool(name: str,
+                    arguments: dict[str, Any] | None = None) -> list[Content]
 ```
 
 ### close
@@ -102,14 +96,18 @@ async def run_async(oas_name: str, spec_url: str, port: int) -> None
 
 ```python
 @click.command()
-@click.option("--oas-name",
-              default="oas",
-              help="Name of the OAS instance (default: oas)")
+@click.option(
+    "--oas-name",
+    default="oas",
+    help="Name of the OAS instance (default: oas)",
+)
 @click.option("--spec-url", required=True, help="OpenAPI spec URL")
-@click.option("--port",
-              default=9000,
-              show_default=True,
-              help="Port to run the server on")
+@click.option(
+    "--port",
+    default=9000,
+    show_default=True,
+    help="Port to run the server on",
+)
 def run_sync(oas_name: str, spec_url: str, port: int) -> None
 ```
 

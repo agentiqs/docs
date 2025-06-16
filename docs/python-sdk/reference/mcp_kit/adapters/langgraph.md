@@ -5,10 +5,6 @@ title: mcp_kit.adapters.langgraph
 
 ## asynccontextmanager
 
-## BaseTool
-
-## load\_mcp\_tools
-
 ## ClientSessionAdapter
 
 ## Target
@@ -31,7 +27,7 @@ Create a new client session for the specified server.
 ### get\_tools
 
 ```python
-async def get_tools(*, server_name: str | None = None) -> list[BaseTool]
+async def get_tools(*, server_name: str | None = None) -> list
 ```
 
 Get LangChain tools from the MCP server.
