@@ -2,43 +2,10 @@
   "items": [
     {
       "items": [
-        {
-          "items": [
-            "mcp_kit/adapters/__init__",
-            "mcp_kit/adapters/client_session",
-            "mcp_kit/adapters/langgraph",
-            "mcp_kit/adapters/openai"
-          ],
-          "label": "mcp_kit.adapters",
-          "type": "category"
-        },
-        {
-          "items": [
-            "mcp_kit/generators/__init__",
-            "mcp_kit/generators/interfaces",
-            "mcp_kit/generators/llm",
-            "mcp_kit/generators/random"
-          ],
-          "label": "mcp_kit.generators",
-          "type": "category"
-        },
-        {
-          "items": [
-            "mcp_kit/targets/__init__",
-            "mcp_kit/targets/interfaces",
-            "mcp_kit/targets/mcp",
-            "mcp_kit/targets/mocked",
-            "mcp_kit/targets/multiplex",
-            "mcp_kit/targets/oas"
-          ],
-          "label": "mcp_kit.targets",
-          "type": "category"
-        },
-        "mcp_kit/__init__",
-        "mcp_kit/factory",
-        "mcp_kit/mixins",
-        "mcp_kit/patch_mcp",
-        "mcp_kit/proxy"
+        "mcp_kit/adapters/__init__",
+        "mcp_kit/adapters/client_session",
+        "mcp_kit/adapters/langgraph",
+        "mcp_kit/adapters/openai"
       ],
       "label": "mcp_kit.adapters",
       "type": "category"
