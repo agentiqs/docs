@@ -68,25 +68,32 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
+      title: 'Agentiqs',
+      // logo: {
+      //   alt: 'My Site Logo',
+      //   src: 'img/logo.svg',
+      //   href: 'https://agentiqs.ai',
+      //   target: '_self', // Open in the same tab
+      // },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/agentiqs',
           label: 'GitHub',
           position: 'right',
         },
       ],
+    },
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,  // Removes the toggle UI
+      respectPrefersColorScheme: false,  // Still respects user's system preference
     },
     footer: {
       style: 'dark',
@@ -126,7 +133,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/agentiqs',
             },
           ],
         },
