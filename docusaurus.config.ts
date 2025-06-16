@@ -65,8 +65,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/agentiqs-social-card.jpg',
+    image: 'img/agentiqs-social-card.png',
     navbar: {
       title: 'Agentiqs',
       logo: {
