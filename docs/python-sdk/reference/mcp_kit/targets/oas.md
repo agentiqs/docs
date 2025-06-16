@@ -2,6 +2,8 @@
 sidebar_label: oas
 title: mcp_kit.targets.oas
 ---
+<!-- This file was auto-generated and should not be edited manually -->
+
 
 ## asyncio
 

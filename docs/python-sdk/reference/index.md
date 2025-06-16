@@ -1,7 +1,7 @@
 ---
-sidebar_label: mcp_kit
-title: mcp_kit
+sidebar_position: 1
 ---
 <!-- This file was auto-generated and should not be edited manually -->
 
 
+# Python SDK Reference

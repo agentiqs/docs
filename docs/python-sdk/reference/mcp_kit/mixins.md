@@ -2,6 +2,8 @@
 sidebar_label: mixins
 title: mcp_kit.mixins
 ---
+<!-- This file was auto-generated and should not be edited manually -->
+
 
 Mixins for configurable classes in the mcp_kit package.
 

@@ -1,3 +1,9 @@
+---
+sidebar_position: 4
+---
+<!-- This file was auto-generated and should not be edited manually -->
+
+
 # Framework Adapters
 
 MCP Kit provides adapters for popular Python frameworks, making it easy to integrate MCP functionality into existing applications.

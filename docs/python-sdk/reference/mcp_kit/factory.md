@@ -2,6 +2,8 @@
 sidebar_label: factory
 title: mcp_kit.factory
 ---
+<!-- This file was auto-generated and should not be edited manually -->
+
 
 Factory for creating instances from configuration using reflection.
 This module provides a central registry to avoid circular imports and supports

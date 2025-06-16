@@ -2,6 +2,8 @@
 sidebar_label: proxy
 title: mcp_kit.proxy
 ---
+<!-- This file was auto-generated and should not be edited manually -->
+
 
 ## logging
 

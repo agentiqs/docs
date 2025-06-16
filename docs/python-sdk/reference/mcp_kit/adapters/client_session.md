@@ -2,6 +2,8 @@
 sidebar_label: client_session
 title: mcp_kit.adapters.client_session
 ---
+<!-- This file was auto-generated and should not be edited manually -->
+
 
 ## logging
 

@@ -2,6 +2,8 @@
 sidebar_label: mcp
 title: mcp_kit.targets.mcp
 ---
+<!-- This file was auto-generated and should not be edited manually -->
+
 
 ## AsyncExitStack
 

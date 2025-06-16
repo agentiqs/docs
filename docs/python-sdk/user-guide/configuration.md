@@ -1,3 +1,9 @@
+---
+sidebar_position: 3
+---
+<!-- This file was auto-generated and should not be edited manually -->
+
+
 # Configuration
 
 MCP Kit uses YAML or JSON configuration files to define proxy behavior, targets, and routing rules.
