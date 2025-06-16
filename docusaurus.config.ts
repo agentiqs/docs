@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Agentiqs.ai',
   tagline: 'Optimize Your AI Agents with Next-Generation Tooling',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -15,10 +15,13 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://agentiqs.ai',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  // Make sure assets use relative paths
+  trailingSlash: false,
+
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -62,28 +65,34 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/agentiqs-social-card.png',
     navbar: {
-      title: 'My Site',
+      title: 'Agentiqs',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Agentiqs.ai',
+        src: 'img/empty.png',
+        href: 'https://agentiqs.ai',
+        target: '_self', // Open in the same tab
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/agentiqs',
           label: 'GitHub',
           position: 'right',
         },
       ],
+    },
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,  // Removes the toggle UI
+      respectPrefersColorScheme: false,  // Still respects user's system preference
     },
     footer: {
       style: 'dark',
@@ -93,7 +102,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/docs',
             },
           ],
         },
@@ -123,7 +132,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/agentiqs',
             },
           ],
         },
