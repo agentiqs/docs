@@ -3,7 +3,7 @@ sidebar_position: 1
 # This file was auto-generated and should not be edited manually
 ---
 
-# Introduction to MCP Kit Python SDK
+# Introduction
 
 Welcome to MCP Kit, a powerful Python SDK for building and integrating with Model Context Protocol (MCP) servers and clients.
 
