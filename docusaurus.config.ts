@@ -69,12 +69,12 @@ const config: Config = {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Agentiqs',
-      // logo: {
-      //   alt: 'My Site Logo',
-      //   src: 'img/logo.svg',
-      //   href: 'https://agentiqs.ai',
-      //   target: '_self', // Open in the same tab
-      // },
+      logo: {
+        alt: 'Agentiqs.ai',
+        src: 'img/empty.png',
+        href: 'https://agentiqs.ai',
+        target: '_self', // Open in the same tab
+      },
       items: [
         {
           type: 'docSidebar',
@@ -103,7 +103,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs',
+              to: '/docs/intro',
             },
           ],
         },
