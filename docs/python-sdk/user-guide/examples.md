@@ -518,4 +518,4 @@ python mcp_client_session/main.py
 
 - Explore the [examples directory](https://github.com/your-org/mcp-kit-python/tree/main/examples) for complete, runnable code
 - Check out [proxy configurations](https://github.com/your-org/mcp-kit-python/tree/main/examples/proxy_configs) for more config examples
-- Read the [API Reference](../reference/) for detailed documentation
+- Read the [API Reference](/docs/python-sdk/reference/) for detailed documentation

@@ -271,4 +271,4 @@ Complete examples using each adapter:
 ## Next Steps
 
 - [Examples](./examples.md) - Try complete working examples
-- [API Reference](../reference/) - Detailed API documentation
+- [API Reference](/docs/python-sdk/reference/) - Detailed API documentation
