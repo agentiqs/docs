@@ -1,9 +1,8 @@
 ---
 sidebar_label: openai
 title: mcp_kit.adapters.openai
+# This file was auto-generated and should not be edited manually
 ---
-<!-- This file was auto-generated and should not be edited manually -->
-
 
 ## logging
 

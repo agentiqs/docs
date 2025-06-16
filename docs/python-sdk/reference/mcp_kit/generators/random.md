@@ -1,9 +1,8 @@
 ---
 sidebar_label: random
 title: mcp_kit.generators.random
+# This file was auto-generated and should not be edited manually
 ---
-<!-- This file was auto-generated and should not be edited manually -->
-
 
 ## random
 

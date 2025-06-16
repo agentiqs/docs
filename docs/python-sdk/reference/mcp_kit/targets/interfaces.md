@@ -1,9 +1,8 @@
 ---
 sidebar_label: interfaces
 title: mcp_kit.targets.interfaces
+# This file was auto-generated and should not be edited manually
 ---
-<!-- This file was auto-generated and should not be edited manually -->
-
 
 ## abstractmethod
 

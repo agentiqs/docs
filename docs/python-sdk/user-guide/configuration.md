@@ -1,8 +1,7 @@
 ---
 sidebar_position: 3
+# This file was auto-generated and should not be edited manually
 ---
-<!-- This file was auto-generated and should not be edited manually -->
-
 
 # Configuration
 

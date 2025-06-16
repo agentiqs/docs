@@ -1,9 +1,8 @@
 ---
 sidebar_label: patch_mcp
 title: mcp_kit.patch_mcp
+# This file was auto-generated and should not be edited manually
 ---
-<!-- This file was auto-generated and should not be edited manually -->
-
 
 ## AsyncExitStack
 

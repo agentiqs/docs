@@ -1,9 +1,8 @@
 ---
 sidebar_label: interfaces
 title: mcp_kit.generators.interfaces
+# This file was auto-generated and should not be edited manually
 ---
-<!-- This file was auto-generated and should not be edited manually -->
-
 
 ## abstractmethod
 

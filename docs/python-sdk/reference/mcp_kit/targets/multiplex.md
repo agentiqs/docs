@@ -1,9 +1,8 @@
 ---
 sidebar_label: multiplex
 title: mcp_kit.targets.multiplex
+# This file was auto-generated and should not be edited manually
 ---
-<!-- This file was auto-generated and should not be edited manually -->
-
 
 ## asyncio
 
