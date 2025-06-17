@@ -111,24 +111,23 @@ const config: Config = {
             },
           ],
         },
-        // {
-          // title: 'Community',
-          // items: [
-            // TODO enable these links when the community is ready
-            // {
-            //   label: 'Stack Overflow',
-            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            // },
-            // {
-            //   label: 'Discord',
-            //   href: 'https://discordapp.com/invite/docusaurus',
-            // },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/mcp-kit',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/DuD2qD2Vbz',
+            },
             // {
             //   label: 'X',
             //   href: 'https://x.com/docusaurus',
             // },
-        //   ],
-        // },
+          ],
+        },
         {
           title: 'More',
           items: [
@@ -139,6 +138,10 @@ const config: Config = {
             {
               label: 'GitHub',
               href: 'https://github.com/agentiqs',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/agentiqs-ai/',
             },
           ],
         },
