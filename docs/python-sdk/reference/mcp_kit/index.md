@@ -25,7 +25,7 @@ the near future file systems, computer use, code interpreter, etc.)
     from mcp_kit.proxy import ProxyMCP
 
     # Create a proxy from configuration that contains a target definition and a mock strategy
-    proxy = ProxyMCP.from_config("config.yaml")
+    proxy = ProxyMCP.from_config("proxy_config.yaml")
 
     # Use as MCP Client Session
     async with proxy.client_session_adapter() as session:

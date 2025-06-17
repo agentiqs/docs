@@ -5,7 +5,7 @@ sidebar_position: 5
 
 # Proxy Configuration Examples
 
-**📂 [View Source Code](https://github.com/mynimbus/mcp-kit-python/tree/443dae86477d32e54599855781d471d2d5dc8ddc/examples/proxy_configs)**
+**📂 [View Source Code](https://github.com/mynimbus/mcp-kit-python/tree/06bf285034db3e79986f97824923d8a2ceb17a72/examples/proxy_configs)**
 This directory contains various proxy configuration examples demonstrating different target types and routing strategies supported by mcp-kit.
 
 ## Configuration Files
