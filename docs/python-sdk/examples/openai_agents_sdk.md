@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # OpenAI Agents SDK Accounting Agent Example
 
-**📂 [View Source Code](https://github.com/mynimbus/mcp-kit-python/tree/563731812c117d5838d7b4973574201d3e324531/examples/openai_agents_sdk)**
+**📂 [View Source Code](https://github.com/mynimbus/mcp-kit-python/tree/9e04cf0cf0fdb509a6eabee74e532b7f45965fc8/examples/openai_agents_sdk)**
 This example demonstrates how to use the OpenAI Agents SDK with MCP tools for accounting queries.
 
 ## Features
