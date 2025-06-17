@@ -6,26 +6,6 @@ title: mcp_kit.targets.multiplex
 
 Multiplex target implementation for combining multiple MCP targets.
 
-## asyncio
-
-## Any
-
-## ErrorData
-
-## McpError
-
-## Content
-
-## Tool
-
-## DictConfig
-
-## Self
-
-## create\_target\_from\_config
-
-## Target
-
 ## MultiplexTarget
 
 ```python

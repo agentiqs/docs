@@ -6,16 +6,6 @@ title: mcp_kit.generators.interfaces
 
 Interface definitions for response generators.
 
-## abstractmethod
-
-## Any
-
-## Tool
-
-## Content
-
-## ConfigurableMixin
-
 ## ResponseGenerator
 
 ```python

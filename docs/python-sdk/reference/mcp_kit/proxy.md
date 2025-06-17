@@ -6,38 +6,6 @@ title: mcp_kit.proxy
 
 Main proxy class for MCP Kit providing multiple adapter interfaces.
 
-## logging
-
-## AsyncIterator
-
-## Iterable
-
-## asynccontextmanager
-
-## Path
-
-## Any
-
-## Tool
-
-## Server
-
-## Content
-
-## OmegaConf
-
-## Self
-
-## ClientSessionAdapter
-
-## LangGraphMultiServerMCPClient
-
-## OpenAIMCPServerAdapter
-
-## create\_target\_from\_config
-
-## Target
-
 ### logger
 
 ## ProxyMCP

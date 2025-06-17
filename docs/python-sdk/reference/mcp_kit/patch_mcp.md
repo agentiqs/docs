@@ -6,14 +6,6 @@ title: mcp_kit.patch_mcp
 
 Utility functions for MCP client connections.
 
-## AsyncExitStack
-
-## Any
-
-## ClientSession
-
-## streamablehttp\_client
-
 ### http\_streamable\_session
 
 ```python

@@ -8,24 +8,6 @@ Factory for creating instances from configuration using reflection.
 This module provides a central registry to avoid circular imports and supports
 both Target and ResponseGenerator creation.
 
-## importlib
-
-## Callable
-
-## TypeVar
-
-## Tool
-
-## ToolAnnotations
-
-## DictConfig
-
-## ListConfig
-
-## OmegaConf
-
-## ConfigurableMixin
-
 ### T
 
 ### create\_object\_from\_config

@@ -6,14 +6,6 @@ title: mcp_kit.mixins
 
 Mixins for configurable classes in the mcp_kit package.
 
-## ABC
-
-## abstractmethod
-
-## DictConfig
-
-## Self
-
 ## ConfigurableMixin
 
 ```python

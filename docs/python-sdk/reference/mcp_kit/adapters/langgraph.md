@@ -6,12 +6,6 @@ title: mcp_kit.adapters.langgraph
 
 LangGraph adapter for MCP targets.
 
-## asynccontextmanager
-
-## ClientSessionAdapter
-
-## Target
-
 ## LangGraphMultiServerMCPClient
 
 ```python

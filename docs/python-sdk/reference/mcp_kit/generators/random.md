@@ -6,24 +6,6 @@ title: mcp_kit.generators.random
 
 Random response generator for testing purposes.
 
-## random
-
-## string
-
-## Any
-
-## Tool
-
-## Content
-
-## TextContent
-
-## DictConfig
-
-## Self
-
-## ResponseGenerator
-
 ## RandomResponseGenerator
 
 ```python

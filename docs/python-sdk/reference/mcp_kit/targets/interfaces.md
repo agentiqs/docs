@@ -6,16 +6,6 @@ title: mcp_kit.targets.interfaces
 
 Interface definitions for MCP targets.
 
-## abstractmethod
-
-## Any
-
-## Tool
-
-## Content
-
-## ConfigurableMixin
-
 ## Target
 
 ```python

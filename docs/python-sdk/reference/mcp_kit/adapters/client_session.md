@@ -6,18 +6,6 @@ title: mcp_kit.adapters.client_session
 
 Client session adapter for MCP targets.
 
-## logging
-
-## Any
-
-## CallToolResult
-
-## ListToolsResult
-
-## TextContent
-
-## Target
-
 ### logger
 
 ## ClientSessionAdapter
