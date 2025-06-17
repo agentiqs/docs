@@ -89,4 +89,4 @@ export MCP_KIT_LOG_LEVEL=INFO
 ## Next Steps
 
 - [Configuration Guide](./configuration.md) - Set up your first proxy
-- [Examples](docs/python-sdk/examples) - Real-world usage examples
+- [Examples](/docs/python-sdk/examples) - Real-world usage examples

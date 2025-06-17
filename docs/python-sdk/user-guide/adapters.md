@@ -267,10 +267,10 @@ mcp_tools = MCPToolNode(
 
 ## Examples
 
-See the [Examples section](docs/python-sdk/examples) for real-world adapter examples with their configuration.
+See the [Examples section](/docs/python-sdk/examples) for real-world adapter examples with their configuration.
 
 
 ## Next Steps
 
-- [Examples](docs/python-sdk/examples) - Real-world usage examples
+- [Examples](/docs/python-sdk/examples) - Real-world usage examples
 - [API Reference](/docs/python-sdk/reference/) - Detailed API documentation

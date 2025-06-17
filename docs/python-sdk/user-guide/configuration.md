@@ -209,9 +209,9 @@ if not is_valid:
 
 ## Examples
 
-See the [Examples section](docs/python-sdk/examples) for real-world configuration examples.
+See the [Examples section](/docs/python-sdk/examples) for real-world configuration examples.
 
 ## Next Steps
 
 - [Adapters Guide](./adapters.md) - Framework integrations
-- [Examples](docs/python-sdk/examples) - Real-world usage examples
+- [Examples](/docs/python-sdk/examples) - Real-world usage examples
