@@ -4,6 +4,8 @@ title: mcp_kit.generators.llm
 # This file was auto-generated and should not be edited manually
 ---
 
+## logging
+
 ## Any
 
 ## litellm
