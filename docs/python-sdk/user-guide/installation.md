@@ -19,7 +19,7 @@ pip install mcp-kit
 ## Install from Source
 
 ```bash
-git clone https://github.com/your-org/mcp-kit-python.git
+git clone https://github.com/agentiqs/mcp-kit-python.git
 cd mcp-kit-python
 pip install -e .
 ```
@@ -55,9 +55,9 @@ pip install mcp-kit[all]
 For contributing to MCP Kit:
 
 ```bash
-git clone https://github.com/your-org/mcp-kit-python.git
+git clone https://github.com/agentiqs/mcp-kit-python.git
 cd mcp-kit-python
-poetry install --with dev,test,docs
+poetry install --with dev,test
 ```
 
 ## Environment Setup
@@ -89,4 +89,4 @@ export MCP_KIT_LOG_LEVEL=INFO
 ## Next Steps
 
 - [Configuration Guide](./configuration.md) - Set up your first proxy
-- [Quick Start Examples](./examples.md) - Try it out
+- [Examples](docs/python-sdk/examples) - Real-world usage examples

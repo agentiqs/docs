@@ -267,13 +267,10 @@ mcp_tools = MCPToolNode(
 
 ## Examples
 
-Complete examples using each adapter:
+See the [Examples section](docs/python-sdk/examples) for real-world adapter examples with their configuration.
 
-- [OpenAI Integration Example](https://github.com/your-org/mcp-kit-python/tree/main/examples/openai_agents_sdk)
-- [LangGraph Workflow Example](https://github.com/your-org/mcp-kit-python/tree/main/examples/langgraph)
-- [Client Session Example](https://github.com/your-org/mcp-kit-python/tree/main/examples/mcp_client_session)
 
 ## Next Steps
 
-- [Examples](./examples.md) - Try complete working examples
+- [Examples](docs/python-sdk/examples) - Real-world usage examples
 - [API Reference](/docs/python-sdk/reference/) - Detailed API documentation

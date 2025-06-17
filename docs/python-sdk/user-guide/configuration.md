@@ -209,14 +209,9 @@ if not is_valid:
 
 ## Examples
 
-See the [examples directory](https://github.com/your-org/mcp-kit-python/tree/main/examples) for real-world configuration examples:
-
-- [Basic MCP Proxy](https://github.com/your-org/mcp-kit-python/blob/main/examples/proxy_configs/mcp_target.yaml)
-- [OpenAPI Integration](https://github.com/your-org/mcp-kit-python/blob/main/examples/proxy_configs/oas_target.yaml)  
-- [Multi-target Setup](https://github.com/your-org/mcp-kit-python/blob/main/examples/proxy_configs/multiplex_target.yaml)
-- [Testing with Mocks](https://github.com/your-org/mcp-kit-python/blob/main/examples/proxy_configs/mocked_random_target.yaml)
+See the [Examples section](docs/python-sdk/examples) for real-world configuration examples.
 
 ## Next Steps
 
 - [Adapters Guide](./adapters.md) - Framework integrations
-- [Examples](./examples.md) - Try complete examples
+- [Examples](docs/python-sdk/examples) - Real-world usage examples
