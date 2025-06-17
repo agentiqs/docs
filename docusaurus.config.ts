@@ -66,6 +66,7 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/agentiqs-social-card.png',
+    homeUrl: 'https://agentiqs.ai',
     navbar: {
       title: 'Agentiqs',
       logo: {
@@ -106,23 +107,24 @@ const config: Config = {
             },
           ],
         },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
+        // {
+          // title: 'Community',
+          // items: [
+            // TODO enable these links when the community is ready
+            // {
+            //   label: 'Stack Overflow',
+            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+            // },
+            // {
+            //   label: 'Discord',
+            //   href: 'https://discordapp.com/invite/docusaurus',
+            // },
+            // {
+            //   label: 'X',
+            //   href: 'https://x.com/docusaurus',
+            // },
+        //   ],
+        // },
         {
           title: 'More',
           items: [
