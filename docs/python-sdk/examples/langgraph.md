@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # LangGraph Accounting Agent Example
 
-**📂 [View Source Code](https://github.com/mynimbus/mcp-kit-python/tree/2f7796649b7aade13bdcbe9a293d0eb3bddcbd3c/examples/langgraph)**
+**📂 [View Source Code](https://github.com/mynimbus/mcp-kit-python/tree/78299db8094c4253444cac3892f15a46f9c65aa0/examples/langgraph)**
 This example demonstrates how to use LangGraph's ReAct agent with MCP tools for accounting queries.
 
 ## Features
