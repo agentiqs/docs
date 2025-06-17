@@ -4,4 +4,4 @@ sidebar_position: 1
 ---
 
 # Introduction
-This section provides a various real-life example projects that showcase usage patterns for the mcp-kit Python SDK.
+This section provides a various real-life example projects that showcase real usage patterns for the mcp-kit Python SDK for various LLM/Agent frameworks and libraries.
