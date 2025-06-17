@@ -77,7 +77,7 @@ target:
     url: http://localhost:8080/mcp
   response_generator:  # Optional - defaults to random
     type: random  # or "llm"
-    model: gpt-4o-mini  # Only for LLM generator
+    model: openai/gpt-4.1-nano  # Only for LLM generator
 ```
 
 **Response Generator Types:**

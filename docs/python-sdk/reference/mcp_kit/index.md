@@ -22,7 +22,7 @@ the near future file systems, computer use, code interpreter, etc.)
 **Example**:
 
     ```python
-    from mcp_kit.proxy import ProxyMCP
+    from mcp_kit import ProxyMCP
 
     # Create a proxy from configuration that contains a target definition and a mock strategy
     proxy = ProxyMCP.from_config("proxy_config.yaml")
@@ -64,4 +64,3 @@ the near future file systems, computer use, code interpreter, etc.)
             {"messages": [{"role": "user", "content": "some input"}]},
         )
     ```
-
