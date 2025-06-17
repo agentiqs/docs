@@ -6,8 +6,6 @@ title: mcp_kit.proxy
 
 Main proxy class for MCP Kit providing multiple adapter interfaces.
 
-## Target
-
 ## ProxyMCP
 
 ```python

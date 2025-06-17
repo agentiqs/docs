@@ -6,8 +6,6 @@ title: mcp_kit.targets.mocked
 
 Mocked target implementation that generates fake responses.
 
-## Target
-
 ## MockConfig
 
 ```python
