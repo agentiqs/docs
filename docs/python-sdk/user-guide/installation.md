@@ -7,14 +7,15 @@ sidebar_position: 2
 
 ## Requirements
 
-- Python 3.8 or higher
-- pip or poetry for package management
+- Python 3.10 or higher
+- uv
 
 ## Install from PyPI
 
 ```bash
-pip install mcp-kit
+uv add mcp-kit
 ```
+
 
 ## Install from Source
 
@@ -35,19 +36,9 @@ print(mcp_kit.__version__)
 
 ### Framework Adapters
 
-For OpenAI integration:
-```bash
-pip install mcp-kit[openai]
-```
-
 For LangGraph integration:
 ```bash
-pip install mcp-kit[langgraph] 
-```
-
-For all adapters:
-```bash
-pip install mcp-kit[all]
+uv add mcp-kit[langgraph]
 ```
 
 ### Development Setup
@@ -57,33 +48,21 @@ For contributing to MCP Kit:
 ```bash
 git clone https://github.com/agentiqs/mcp-kit-python.git
 cd mcp-kit-python
-poetry install --with dev,test
+uv add --with dev
 ```
 
 ## Environment Setup
 
 ### Configuration Directory
 
-MCP Kit looks for configuration files in these locations:
-
-1. Current working directory
-2. `~/.mcp-kit/`
-3. `/etc/mcp-kit/`
-
-Create your configuration directory:
-
-```bash
-mkdir -p ~/.mcp-kit
-```
+MCP Kit looks for .env configuration files and loads each LLM provider specific variables
 
 ### Environment Variables
 
 Common environment variables:
 
 ```bash
-export MCP_KIT_CONFIG_PATH="~/.mcp-kit"
-export MCP_KIT_DEBUG=true
-export MCP_KIT_LOG_LEVEL=INFO
+<PROVIDER>_API_KEY="your_api_key"
 ```
 
 ## Next Steps

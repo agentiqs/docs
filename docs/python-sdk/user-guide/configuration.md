@@ -12,62 +12,84 @@ MCP Kit uses YAML or JSON configuration files to define proxy behavior, targets,
 ### Minimal Configuration
 
 ```yaml
-# config.yaml
-targets:
-  - id: "my-mcp-server"
-    type: "mcp"
-    config:
-      command: "python"
-      args: ["my_server.py"]
+# proxy_config.yaml
+target:
+  type: mcp
+  name: my-mcp-server
+  url: http://localhost:8080/mcp
+  headers:
+    Authorization: Bearer your-token-here
+    Content-Type: application/json
 ```
 
-### Complete Configuration
+### Advanced Configuration
 
 ```yaml
-# Full configuration example
-version: "1.0"
-name: "my-mcp-proxy"
+# Example configuration for a multiplex target combining multiple servers
+target:
+  type: multiplex
+  name: combined-servers
+  targets:
+    - type: mcp
+      name: mcp-server-1
+      url: http://localhost:8080/mcp
+    - type: oas
+      name: petstore-api
+      spec_url: https://petstore3.swagger.io/api/v3/openapi.json
+    - type: mocked
+      response_generator:
+        type: llm
+        model: openai/gpt-4.1-nano
+      base_target:
+        type: mcp
+        name: test-server
+        tools:
+          - name: get_user_info
+            description: Retrieve user information by user ID
+            inputSchema:
+              type: object
+              properties:
+                user_id:
+                  type: string
+                  description: The unique identifier for the user
+                include_details:
+                  type: boolean
+                  description: Whether to include detailed information
+                  default: false
+              required:
+                - user_id
+            annotations:
+              title: User Information Retrieval
+              readOnlyHint: true
+              destructiveHint: false
+              idempotentHint: true
+              openWorldHint: false
+          - name: send_notification
+            description: Send a notification to a user
+            inputSchema:
+              type: object
+              properties:
+                user_id:
+                  type: string
+                  description: The unique identifier for the user
+                message:
+                  type: string
+                  description: The notification message to send
+                priority:
+                  type: string
+                  enum: ["low", "medium", "high"]
+                  description: The priority level of the notification
+                  default: medium
+              required:
+                - user_id
+                - message
+            annotations:
+              title: User Notification Sender
+              readOnlyHint: false
+              destructiveHint: false
+              idempotentHint: false
+              openWorldHint: true
 
-# Global settings
-settings:
-  timeout: 30
-  retries: 3
-  log_level: "INFO"
-
-# Target definitions
-targets:
-  - id: "primary-mcp"
-    type: "mcp"
-    config:
-      command: "python"
-      args: ["server.py"]
-      
-  - id: "backup-api"
-    type: "oas"
-    config:
-      base_url: "https://api.example.com"
-      spec_url: "https://api.example.com/openapi.json"
-      
-  - id: "mock-responses"
-    type: "mocked"
-    config:
-      generator: "random"
-
-# Routing rules
-routing:
-  - tools: ["get_weather", "get_forecast"]
-    target: "primary-mcp"
-    
-  - tools: ["*"] # fallback
-    target: "backup-api"
-    
-# Response generation
-generators:
-  - id: "smart-llm"
-    type: "llm"
-    config:
-      model: "gpt-4"
-      temperature: 0.7
 ```
 
 ## Configuration Sections
@@ -78,140 +100,78 @@ Define where requests should be routed:
 
 #### MCP Target
 ```yaml
-targets:
-  - id: "my-server"
-    type: "mcp"
-    config:
-      command: "python"
-      args: ["path/to/server.py"]
-      env:
-        API_KEY: "${API_KEY}"
-      cwd: "/path/to/server"
+target:
+  type: mcp
+  name: my-mcp-server
+  url: http://localhost:8080/mcp
+  headers:
+    Authorization: Bearer your-token-here
+    Content-Type: application/json
 ```
 
-#### OpenAPI Target
+#### OpenAPI Spec Target
 ```yaml
-targets:
-  - id: "rest-api"
-    type: "oas"
-    config:
-      base_url: "https://api.example.com"
-      spec_url: "https://api.example.com/openapi.json"
-      headers:
-        Authorization: "Bearer ${API_TOKEN}"
+target:
+  type: oas
+  name: petstore-api
+  spec_url: https://petstore3.swagger.io/api/v3/openapi.json
 ```
 
 #### Mocked Target
 ```yaml
-targets:
-  - id: "testing"
-    type: "mocked"
-    config:
-      generator: "random"
-      responses:
-        get_user:
-          name: "John Doe"
-          email: "john@example.com"
+target:
+  type: mocked
+  base_target:
+    type: oas
+    name: base-oas-server
+    spec_url: https://petstore3.swagger.io/api/v3/openapi.json
+  response_generator:
+    type: llm
+    model: openai/gpt-4.1-nano
+
 ```
 
 #### Multiplex Target
 ```yaml
-targets:
-  - id: "load-balanced"
-    type: "multiplex"
-    config:
-      strategy: "round_robin" # or "random", "weighted"
-      targets: ["server1", "server2", "server3"]
-      health_check: true
+target:
+  type: multiplex
+  name: combined-servers
+  targets:
+    - type: mcp
+      name: mcp-server-1
+      url: http://localhost:8080/mcp
+    - type: oas
+      name: petstore-api
+      spec_url: https://petstore3.swagger.io/api/v3/openapi.json
 ```
 
-### Routing
-
-Define how tools/methods are routed:
-
-```yaml
-routing:
-  # Route specific tools
-  - tools: ["get_weather", "get_forecast"]
-    target: "weather-service"
-    
-  # Route by pattern
-  - tools: ["user_*"]
-    target: "user-service"
-    
-  # Route with conditions
-  - tools: ["*"]
-    target: "primary"
-    conditions:
-      - env: "production"
-    
-  # Fallback
-  - tools: ["*"]
-    target: "mock"
-```
 
 ### Generators
 
 Configure response generation:
 
 ```yaml
-generators:
-  - id: "smart-responses"
-    type: "llm"
-    config:
-      provider: "openai"
-      model: "gpt-4"
-      temperature: 0.7
-      max_tokens: 1000
-      
-  - id: "test-data"
-    type: "random"
-    config:
-      seed: 42
-      schemas:
-        user:
-          name: "faker.name"
-          email: "faker.email"
+response_generator:
+  type: llm
+  model: anthropic/claude-3-5-haiku-20241022
 ```
 
-## Environment Variables
-
-Use environment variables in configurations:
-
 ```yaml
-targets:
-  - id: "secure-api"
-    type: "oas"
-    config:
-      base_url: "${API_BASE_URL}"
-      headers:
-        Authorization: "Bearer ${API_TOKEN}"
+response_generator:
+  type: random
 ```
 
 Set variables:
 ```bash
-export API_BASE_URL="https://api.prod.example.com"
-export API_TOKEN="your-secret-token"
-```
-
-## Configuration Validation
-
-MCP Kit validates configurations on startup:
-
-```python
-from mcp_kit import validate_config
-
-# Validate before using
-is_valid, errors = validate_config("config.yaml")
-if not is_valid:
-    print("Configuration errors:", errors)
+# .env
+ANTHROPIC_API_KEY="your_api_key"
 ```
 
 ## Examples
 
-See the [Examples section](/docs/python-sdk/examples) for real-world configuration examples.
+See the [Examples section](../examples/index.md) for real-world configuration examples.
 
 ## Next Steps
 
 - [Adapters Guide](./adapters.md) - Framework integrations
-- [Examples](/docs/python-sdk/examples) - Real-world usage examples
+- [Examples](../examples/index.md) - Real-world usage examples

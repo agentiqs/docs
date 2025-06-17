@@ -54,6 +54,15 @@ Built-in generators for:
 uv add mcp-kit
 ```
 
+#### Extras
+
+If using with langgraph
+
+```bash
+uv add mcp-kit[langgraph]
+```
+
+
 ### Basic Usage
 
 #### First you write the Proxy config:
