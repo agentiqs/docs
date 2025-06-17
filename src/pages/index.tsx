@@ -1,15 +1,12 @@
-import type {ReactNode} from 'react';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
+import React, { useEffect } from 'react';
+import type { ReactElement } from 'react';
 
-export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <div>
-      <p>Welcome to Agentiqs.ai</p>
-      The landing page is in a different project. You're not supposed to serve this page.<br/>
-      <a href="/docs">Go to the documentation</a><br/>
-      <a href="/blog">Go to the blog</a><br/>
-    </div>
-  );
+export default function Home(): ReactElement {
+  useEffect(() => {
+    // Redirect to external URL immediately
+    window.location.href = 'https://agentiqs.ai';
+  }, []);
+
+  // Return a simple loading message while redirecting
+  return <div>Redirecting to agentiqs.ai landing...</div>;
 }

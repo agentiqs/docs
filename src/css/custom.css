@@ -312,3 +312,8 @@ html {
   --ifm-color-primary-lightest: rgb(191, 219, 254);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Hide the breadcrumbs home link */
+.breadcrumbs .breadcrumbs__item:first-child {
+  display: none !important;
+}
