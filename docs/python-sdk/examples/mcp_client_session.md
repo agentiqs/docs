@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # MCP Client Session Example
 
-**📂 [View Source Code](https://github.com/mynimbus/mcp-kit-python/tree/78299db8094c4253444cac3892f15a46f9c65aa0/examples/mcp_client_session)**
+**📂 [View Source Code](https://github.com/mynimbus/mcp-kit-python/tree/c73812a3e787ccd2bf272d8d594588b27cd8c92c/examples/mcp_client_session)**
 This example demonstrates how to use the generic MCP Client Session adapter for connecting to MCP servers.
 
 ## Features
