@@ -6,7 +6,7 @@ title: mcp_kit.adapters.openai
 
 OpenAI Agents SDK adapter for MCP targets.
 
-### logger
+## Target
 
 ## OpenAIMCPServerAdapter
 

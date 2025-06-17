@@ -6,6 +6,8 @@ title: mcp_kit.patch_mcp
 
 Utility functions for MCP client connections.
 
+## streamablehttp\_client
+
 ### http\_streamable\_session
 
 ```python

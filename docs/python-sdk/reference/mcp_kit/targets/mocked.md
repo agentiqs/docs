@@ -6,7 +6,7 @@ title: mcp_kit.targets.mocked
 
 Mocked target implementation that generates fake responses.
 
-### logger
+## Target
 
 ## MockConfig
 
@@ -20,8 +20,6 @@ Configuration for mocked target behavior.
 **Arguments**:
 
 - `response_generator`: The generator to use for creating mock responses
-
-### response\_generator
 
 ## MockedTarget
 

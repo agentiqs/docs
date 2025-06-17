@@ -6,7 +6,7 @@ title: mcp_kit.adapters.client_session
 
 Client session adapter for MCP targets.
 
-### logger
+## Target
 
 ## ClientSessionAdapter
 
