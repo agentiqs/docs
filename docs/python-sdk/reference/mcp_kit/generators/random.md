@@ -4,6 +4,8 @@ title: mcp_kit.generators.random
 # This file was auto-generated and should not be edited manually
 ---
 
+Random response generator for testing purposes.
+
 ## random
 
 ## string
@@ -30,6 +32,9 @@ class RandomResponseGenerator(ResponseGenerator)
 
 Generate random text content for testing.
 
+This generator creates synthetic responses containing random text,
+useful for testing MCP integrations without needing real data sources.
+
 ### from\_config
 
 ```python
@@ -55,5 +60,15 @@ async def generate(target_name: str,
                    arguments: dict[str, Any] | None = None) -> list[Content]
 ```
 
-Generate an MCP call tool response.
+Generate a random text response.
+
+**Arguments**:
+
+- `target_name`: Name of the target (unused in random generation)
+- `tool`: The MCP tool definition (unused in random generation)
+- `arguments`: Tool arguments (unused in random generation)
+
+**Returns**:
+
+List containing a single TextContent with random text
 

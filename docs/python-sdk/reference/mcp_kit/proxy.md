@@ -4,6 +4,8 @@ title: mcp_kit.proxy
 # This file was auto-generated and should not be edited manually
 ---
 
+Main proxy class for MCP Kit providing multiple adapter interfaces.
+
 ## logging
 
 ## AsyncIterator
@@ -44,6 +46,12 @@ title: mcp_kit.proxy
 class ProxyMCP()
 ```
 
+Main proxy class for MCP Kit that provides multiple adapter interfaces.
+
+This class serves as the central entry point for MCP Kit, allowing a single
+MCP target to be exposed through various interfaces including client sessions,
+OpenAI Agents SDK, official MCP servers, and LangGraph compatibility.
+
 ### from\_config
 
 ```python
@@ -61,35 +69,60 @@ Factory method to create ProxyMCP from a configuration file.
 
 ProxyMCP instance
 
-### as\_client\_session\_adapter
+### client\_session\_adapter
 
 ```python
 @asynccontextmanager
-async def as_client_session_adapter() -> AsyncIterator
+async def client_session_adapter() -> AsyncIterator
 ```
 
-### as\_openai\_agents\_mcp\_server
+Create a client session adapter for the target.
+
+Provides a context manager that yields a ClientSessionAdapter for
+interacting with the target as a client session.
+
+:yield: ClientSessionAdapter for the target
+
+### openai\_agents\_mcp\_server
 
 ```python
 @asynccontextmanager
-async def as_openai_agents_mcp_server() -> AsyncIterator
+async def openai_agents_mcp_server() -> AsyncIterator
 ```
 
 Convert the target to an OpenAI Agents MCP server.
 
-### as\_official\_mcp\_server
+Provides a context manager that yields an OpenAI Agents SDK compatible
+adapter for the target.
+
+:yield: OpenAIMCPServerAdapter for the target
+
+### official\_mcp\_server
 
 ```python
 @asynccontextmanager
-async def as_official_mcp_server() -> AsyncIterator[Server]
+async def official_mcp_server() -> AsyncIterator[Server]
 ```
 
-### as\_langgraph\_multi\_server\_mcp\_client
+Convert the target to an official MCP server.
+
+Creates a standard MCP Server instance that wraps the target,
+allowing it to be used with official MCP tooling.
+
+:yield: Official MCP Server instance wrapping the target
+
+### langgraph\_multi\_server\_mcp\_client
 
 ```python
-def as_langgraph_multi_server_mcp_client()
+def langgraph_multi_server_mcp_client()
 ```
 
 Convert the target to a LangGraph-compatible multi-server MCP client.
-This provides an interface similar to MultiServerMCPClient from langchain-mcp-adapters.
+
+This provides an interface similar to MultiServerMCPClient from langchain-mcp-adapters
+for use with LangGraph workflows.
+
+**Returns**:
+
+LangGraphMultiServerMCPClient adapter for the target
 

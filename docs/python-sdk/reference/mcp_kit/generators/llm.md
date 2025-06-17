@@ -4,6 +4,8 @@ title: mcp_kit.generators.llm
 # This file was auto-generated and should not be edited manually
 ---
 
+LLM-based response generator for realistic mock responses.
+
 ## logging
 
 ## Any
@@ -36,7 +38,10 @@ title: mcp_kit.generators.llm
 class LlmAuthenticationError(Exception)
 ```
 
-Base class for LLM authentication errors.
+Exception raised when LLM authentication fails.
+
+This exception is raised when the LLM service rejects the authentication
+credentials (API key, token, etc.).
 
 ## LlmResponseGenerator
 
@@ -45,6 +50,10 @@ class LlmResponseGenerator(ResponseGenerator)
 ```
 
 Generate mock responses using an LLM agent.
+
+This generator uses a Large Language Model to create realistic mock responses
+based on the tool context, making it suitable for testing scenarios that
+require believable synthetic data.
 
 ### from\_config
 
@@ -57,7 +66,11 @@ Create LLMResponseGenerator from configuration.
 
 **Arguments**:
 
-- `config`: Configuration data with optional &#x27;model&#x27; parameter
+- `config`: Configuration data with required &#x27;model&#x27; parameter
+
+**Raises**:
+
+- `ValueError`: If model parameter is missing from configuration
 
 **Returns**:
 
@@ -72,4 +85,22 @@ async def generate(target_name: str,
 ```
 
 Generate mock response using the LLM agent.
+
+Creates a contextual prompt based on the tool information and uses
+the configured LLM to generate a realistic response.
+
+**Arguments**:
+
+- `target_name`: Name of the target server
+- `tool`: The MCP tool definition
+- `arguments`: Arguments passed to the tool
+
+**Raises**:
+
+- `LlmAuthenticationError`: If LLM authentication fails
+- `ValueError`: If the LLM response is empty
+
+**Returns**:
+
+List containing generated text content
 
