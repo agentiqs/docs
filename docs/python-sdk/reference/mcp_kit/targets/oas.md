@@ -17,6 +17,19 @@ Target implementation for OpenAPI Specification (OAS) endpoints.
 This target creates MCP tools from OpenAPI specifications, allowing
 interaction with REST APIs through the MCP protocol.
 
+### \_\_init\_\_
+
+```python
+def __init__(name: str, spec_url: str) -> None
+```
+
+Initialize the OAS target.
+
+**Arguments**:
+
+- `name`: Name of the target
+- `spec_url`: URL of the OpenAPI specification
+
 ### name
 
 ```python

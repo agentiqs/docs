@@ -17,6 +17,24 @@ Target implementation for connecting to MCP servers (hosted or with a spec).
 This target can connect to remote MCP servers or use predefined tools.
 It supports HTTP connections with optional headers and authentication.
 
+### \_\_init\_\_
+
+```python
+def __init__(name: str,
+             url: str | None = None,
+             headers: dict[str, str] | None = None,
+             tools: list[Tool] | None = None) -> None
+```
+
+Initialize the MCP target.
+
+**Arguments**:
+
+- `name`: Name of the target
+- `url`: Optional URL of the remote MCP server
+- `headers`: Optional HTTP headers for server requests
+- `tools`: Optional predefined tools to use instead of remote server tools
+
 ### name
 
 ```python

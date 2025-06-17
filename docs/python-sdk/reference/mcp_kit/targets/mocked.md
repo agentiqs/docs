@@ -31,6 +31,19 @@ This target implementation intercepts tool calls and generates synthetic
 responses instead of calling the actual target. Useful for testing and
 development scenarios.
 
+### \_\_init\_\_
+
+```python
+def __init__(target: Target, mock_config: MockConfig) -> None
+```
+
+Initialize the mocked target.
+
+**Arguments**:
+
+- `target`: The base target to wrap
+- `mock_config`: Configuration for mock behavior
+
 ### name
 
 ```python

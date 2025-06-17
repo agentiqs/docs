@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # OpenAI Agents SDK Accounting Agent Example
 
-**📂 [View Source Code](https://github.com/mynimbus/mcp-kit-python/tree/35055492c40b7cc07000ee7830339454741dd5c2/examples/openai_agents_sdk)**
+**📂 [View Source Code](https://github.com/mynimbus/mcp-kit-python/tree/3b4136d2b5fee742ef4e39370d7ff73d4d817475/examples/openai_agents_sdk)**
 This example demonstrates how to use the OpenAI Agents SDK with MCP tools for accounting queries.
 
 ## Features
@@ -19,7 +19,7 @@ This example demonstrates how to use the OpenAI Agents SDK with MCP tools for ac
 
 1. Install dependencies:
 ```bash
-poetry install
+uv sync
 ```
 
 2. Set up your environment variables (create a `.env` file):
@@ -30,17 +30,18 @@ OPENAI_API_KEY=your_openai_api_key_here
 ## Usage
 
 ```bash
-poetry run python main.py
+uv run main.py
 ```
 
 ## Configuration
 
-The `proxy_config.yaml` file defines the mocked Odoo MCP target that provides accounting tools like:
-- `get_expenses`
-- `get_revenues`
+The `proxy_config.yaml` file defines a mocked Odoo MCP target that provides accounting tools like:
+- `get_expenses` - Retrieve expense records
+- `get_revenues` - Retrieve revenue records
+- `get_account_balance` - Get account balances
 
 The configuration uses LLM-generated responses for realistic accounting data simulation.
 
 ## Tracing
 
-This example includes OpenAI tracing for monitoring the agent workflow. After running, you'll see a trace URL in the logs that you can use to monitor the execution on the OpenAI platform.
+This example includes OpenAI tracing for monitoring the agent workflow. After running, you'll see a trace URL in the logs that you can use to monitor the execution on the OpenAI platform, including the LLM mock response generation steps.

@@ -18,6 +18,19 @@ This target implementation allows multiple MCP targets to be accessed
 through a single interface. Tools from different targets are namespaced
 to avoid conflicts.
 
+### \_\_init\_\_
+
+```python
+def __init__(name: str, *targets: Target) -> None
+```
+
+Initialize the multiplex target.
+
+**Arguments**:
+
+- `name`: Name of the multiplex target
+- `targets`: Variable number of targets to multiplex
+
 ### name
 
 ```python

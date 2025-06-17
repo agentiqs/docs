@@ -17,6 +17,22 @@ Adapter class for LangGraph compatibility with MCP targets.
 This adapter provides an interface similar to MultiServerMCPClient from
 langchain-mcp-adapters, allowing MCP targets to be used with LangGraph workflows.
 
+### \_\_init\_\_
+
+```python
+def __init__(target: Target)
+```
+
+Initialize the LangGraph MCP client adapter.
+
+**Arguments**:
+
+- `target`: The MCP target to adapt for LangGraph use
+
+**Raises**:
+
+- `ImportError`: If langchain_mcp_adapters is not installed
+
 ### session
 
 ```python

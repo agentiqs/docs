@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # MCP Client Session Example
 
-**📂 [View Source Code](https://github.com/mynimbus/mcp-kit-python/tree/35055492c40b7cc07000ee7830339454741dd5c2/examples/mcp_client_session)**
+**📂 [View Source Code](https://github.com/mynimbus/mcp-kit-python/tree/3b4136d2b5fee742ef4e39370d7ff73d4d817475/examples/mcp_client_session)**
 This example demonstrates how to use the generic MCP Client Session adapter for connecting to MCP servers.
 
 ## Features
@@ -19,25 +19,25 @@ This example demonstrates how to use the generic MCP Client Session adapter for 
 
 1. Install dependencies:
 ```bash
-poetry install
+uv sync
 ```
 
 2. Set up your environment variables (create a `.env` file):
 ```bash
-# No API keys needed for this example - uses mocked data
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
 ```
 
 ## Usage
 
 ```bash
-poetry run python main.py
+uv run main.py
 ```
 
 ## Configuration
 
 The `proxy_config.yaml` file defines a mocked Odoo MCP target that provides accounting tools like:
 - `get_expenses` - Retrieve expense records
-- `get_revenues` - Retrieve revenue records  
+- `get_revenues` - Retrieve revenue records
 - `get_account_balance` - Get account balances
 
-This example showcases the raw MCP protocol interaction through the client session adapter.
+The configuration uses LLM-generated responses for realistic accounting data simulation.

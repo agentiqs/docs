@@ -17,6 +17,18 @@ Adapter class to convert MCP targets to OpenAI Agents SDK compatible interface.
 This adapter provides compatibility with OpenAI&#x27;s Agents SDK by implementing
 the expected interface for MCP server connections.
 
+### \_\_init\_\_
+
+```python
+def __init__(target: Target)
+```
+
+Initialize the OpenAI MCP server adapter.
+
+**Arguments**:
+
+- `target`: The MCP target to adapt
+
 ### connect
 
 ```python

@@ -18,6 +18,18 @@ This class serves as the central entry point for MCP Kit, allowing a single
 MCP target to be exposed through various interfaces including client sessions,
 OpenAI Agents SDK, official MCP servers, and LangGraph compatibility.
 
+### \_\_init\_\_
+
+```python
+def __init__(target: Target) -> None
+```
+
+Initialize the ProxyMCP with a target MCP server.
+
+**Arguments**:
+
+- `target`: The target MCP server to proxy requests to
+
 ### from\_config
 
 ```python

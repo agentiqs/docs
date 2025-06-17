@@ -17,6 +17,18 @@ Adapter class to convert the target MCP server to a ClientSession.
 This adapter provides a client session interface for interacting with
 MCP targets, wrapping tool calls and error handling.
 
+### \_\_init\_\_
+
+```python
+def __init__(target: Target)
+```
+
+Initialize the client session adapter.
+
+**Arguments**:
+
+- `target`: The MCP target to adapt
+
 ### list\_tools
 
 ```python

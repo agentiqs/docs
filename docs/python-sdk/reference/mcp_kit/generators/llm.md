@@ -29,6 +29,18 @@ This generator uses a Large Language Model to create realistic mock responses
 based on the tool context, making it suitable for testing scenarios that
 require believable synthetic data.
 
+### \_\_init\_\_
+
+```python
+def __init__(model: str)
+```
+
+Initialize the LLM response generator.
+
+**Arguments**:
+
+- `model`: The LLM model identifier to use for generation
+
 ### from\_config
 
 ```python
