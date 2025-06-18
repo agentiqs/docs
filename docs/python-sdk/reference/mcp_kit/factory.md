@@ -8,7 +8,7 @@ Factory for creating instances from configuration using reflection.
 This module provides a central registry to avoid circular imports and supports
 both Target and ResponseGenerator creation.
 
-## ConfigurableMixin
+## Target
 
 ### create\_object\_from\_config
 
@@ -16,7 +16,7 @@ both Target and ResponseGenerator creation.
 def create_object_from_config(config: DictConfig,
                               get_class_name: Callable[[str], str],
                               get_module_name: Callable[[str], str],
-                              object_type_name: str = "object") -> T
+                              object_type_name: str = "object") -> Any
 ```
 
 Generic factory function to create any object instance from configuration using reflection.
@@ -39,7 +39,7 @@ Object instance
 ### create\_target\_from\_config
 
 ```python
-def create_target_from_config(config: DictConfig)
+def create_target_from_config(config: DictConfig) -> Target
 ```
 
 Factory function to create any Target instance from configuration using reflection.
@@ -59,7 +59,8 @@ Target instance
 ### create\_response\_generator\_from\_config
 
 ```python
-def create_response_generator_from_config(config: DictConfig)
+def create_response_generator_from_config(
+        config: DictConfig) -> ResponseGenerator
 ```
 
 Factory function to create any ResponseGenerator instance from configuration using reflection.

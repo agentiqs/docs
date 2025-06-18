@@ -32,7 +32,7 @@ Initialize the OpenAI MCP server adapter.
 ### connect
 
 ```python
-async def connect()
+async def connect() -> None
 ```
 
 Connect to the server.
@@ -56,7 +56,7 @@ The server name
 ### cleanup
 
 ```python
-async def cleanup()
+async def cleanup() -> None
 ```
 
 Cleanup the server.

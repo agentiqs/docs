@@ -51,7 +51,7 @@ ProxyMCP instance
 
 ```python
 @asynccontextmanager
-async def client_session_adapter() -> AsyncIterator
+async def client_session_adapter() -> AsyncIterator[Any]
 ```
 
 Create a client session adapter for the target.
@@ -65,7 +65,7 @@ interacting with the target as a client session.
 
 ```python
 @asynccontextmanager
-async def openai_agents_mcp_server() -> AsyncIterator
+async def openai_agents_mcp_server() -> AsyncIterator[Any]
 ```
 
 Convert the target to an OpenAI Agents MCP server.
@@ -79,7 +79,7 @@ adapter for the target.
 
 ```python
 @asynccontextmanager
-async def official_mcp_server() -> AsyncIterator[Server]
+async def official_mcp_server() -> AsyncIterator[Server[Any]]
 ```
 
 Convert the target to an official MCP server.
@@ -92,7 +92,7 @@ allowing it to be used with official MCP tooling.
 ### langgraph\_multi\_server\_mcp\_client
 
 ```python
-def langgraph_multi_server_mcp_client()
+def langgraph_multi_server_mcp_client() -> Any
 ```
 
 Convert the target to a LangGraph-compatible multi-server MCP client.

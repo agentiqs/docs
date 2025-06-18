@@ -37,7 +37,9 @@ Initialize the LangGraph MCP client adapter.
 
 ```python
 @asynccontextmanager
-async def session(server_name: str, *, auto_initialize: bool = True)
+async def session(server_name: str,
+                  *,
+                  auto_initialize: bool = True) -> AsyncIterator[Any]
 ```
 
 Create a new client session for the specified server.
@@ -58,7 +60,7 @@ ClientSessionAdapter for the target
 ### get\_tools
 
 ```python
-async def get_tools(*, server_name: str | None = None) -> list
+async def get_tools(*, server_name: str | None = None) -> list[BaseTool]
 ```
 
 Get LangChain tools from the MCP server.
