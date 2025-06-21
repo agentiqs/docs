@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://agentiqs.ai',
+  url: 'https://docs.agentiqs.ai',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -67,37 +67,55 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'mcp-kit-python',
+        path: 'mcp-kit-python',
+        routeBasePath: 'docs/mcp-kit-python',
+        sidebarPath: './mcp-kit-python/sidebarsMcpKitPython.ts',
+        // ... other options
+
+      },
+    ],
+  ],
 
   themeConfig: {
     image: 'img/agentiqs-social-card.png',
-    homeUrl: 'https://agentiqs.ai',
     navbar: {
-      title: 'Agentiqs',
+      title: '',
       logo: {
         alt: 'Agentiqs.ai',
-        src: 'img/empty.png',
-        href: 'https://agentiqs.ai',
-        target: '_self', // Open in the same tab
+        srcDark: 'img/agentiqs-for-dark-bg.png',
+        src: 'img/agentiqs-for-light-bg.png',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'sidebar',
           position: 'left',
           label: 'Docs',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'sidebarMcpKitPython',
+          docsPluginId: 'mcp-kit-python',
+          position: 'left',
+          label: 'mcp-kit Python',
+        },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/agentiqs',
-          label: 'GitHub',
+          href: 'https://agentiqs.ai',
+          label: 'agentiqs.ai',
           position: 'right',
         },
       ],
     },
     colorMode: {
       defaultMode: 'dark',
-      disableSwitch: true,  // Removes the toggle UI
-      respectPrefersColorScheme: false,  // Still respects user's system preference
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
     },
     footer: {
       style: 'dark',
@@ -106,8 +124,12 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Docs',
+              label: 'Introduction',
               to: '/docs',
+            },
+            {
+              label: 'mcp-kit Python',
+              to: '/docs/mcp-kit-python',
             },
           ],
         },
@@ -124,7 +146,7 @@ const config: Config = {
             },
             // {
             //   label: 'X',
-            //   href: 'https://x.com/docusaurus',
+            //   href: 'https://x.com/agentiqs',
             // },
           ],
         },
