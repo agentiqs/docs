@@ -25,9 +25,14 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
+            className="button button--primary button--lg"
+            to="/mcp-kit-python/docs">
+            mcp-kit-python User Guide 📚
+          </Link>
+          <Link
             className="button button--secondary button--lg"
-            to="/docs">
-            Get Started - 5min ⏱️
+            to="/mcp-kit-python/docs/examples">
+            mcp-kit-python Examples ⚡️
           </Link>
         </div>
       </div>

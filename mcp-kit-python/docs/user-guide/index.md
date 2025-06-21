@@ -127,5 +127,5 @@ The diagram above illustrates the core components and extensibility points of MC
 - [Installation Guide](./installation.md) - Get up and running
 - [Configuration](./configuration.md) - Learn about proxy configs
 - [Adapters](./adapters.md) - Framework integrations
-- [Examples](/docs/python-sdk/examples) - Real-world usage examples
-- [API Reference](/docs/python-sdk/reference/) - Complete API documentation
+- [Examples](../examples/index.mdx) - Real-world usage examples
+- [API Reference](../reference/index.md) - Complete API documentation

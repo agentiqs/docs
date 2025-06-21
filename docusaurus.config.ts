@@ -43,9 +43,7 @@ const config: Config = {
     [
       'classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-        },
+        docs: false,
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -73,7 +71,7 @@ const config: Config = {
       {
         id: 'mcp-kit-python',
         path: 'mcp-kit-python',
-        routeBasePath: 'docs/mcp-kit-python',
+        routeBasePath: 'mcp-kit-python',
         sidebarPath: './mcp-kit-python/sidebarsMcpKitPython.ts',
         // ... other options
 
@@ -91,12 +89,6 @@ const config: Config = {
         src: 'img/agentiqs-for-light-bg.png',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'sidebar',
-          position: 'left',
-          label: 'Docs',
-        },
         {
           type: 'docSidebar',
           sidebarId: 'sidebarMcpKitPython',
@@ -134,12 +126,8 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Introduction',
-              to: '/docs',
-            },
-            {
               label: 'mcp-kit Python',
-              to: '/docs/mcp-kit-python',
+              to: '/mcp-kit-python/docs',
             },
           ],
         },

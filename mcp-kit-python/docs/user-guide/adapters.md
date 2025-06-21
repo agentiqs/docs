@@ -9,10 +9,10 @@ MCP Kit provides adapters for popular Python frameworks, making it easy to integ
 
 ## Examples
 
-See the [Examples section](../examples/index.md) for real-world adapter examples with their configuration.
+See the [Examples section](../examples) for real-world adapter examples with their configuration.
 
 
 ## Next Steps
 
-- [Examples](../examples/index.md) - Real-world usage examples
+- [Examples](../examples) - Real-world usage examples
 - [API Reference](../reference/index.md) - Detailed API documentation

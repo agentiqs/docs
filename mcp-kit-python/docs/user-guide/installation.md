@@ -68,4 +68,4 @@ Common environment variables:
 ## Next Steps
 
 - [Configuration Guide](./configuration.md) - Set up your first proxy
-- [Examples](/docs/python-sdk/examples) - Real-world usage examples
+- [Examples](../examples) - Real-world usage examples
