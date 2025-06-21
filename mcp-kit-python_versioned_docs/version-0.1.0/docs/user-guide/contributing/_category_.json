@@ -2,7 +2,7 @@
   "label": "Contributing",
   "position": 5,
   "link": {
-    "type": "generated-index",
-    "description": "Contributing to the mcp-kit Python SDK."
+    "type": "doc",
+    "id": "docs/user-guide/contributing/index"
   }
 }
