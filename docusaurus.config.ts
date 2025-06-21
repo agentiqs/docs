@@ -104,7 +104,17 @@ const config: Config = {
           position: 'left',
           label: 'mcp-kit Python',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'docsVersionDropdown',
+          position: 'left',
+          docsPluginId: 'mcp-kit-python',
+          dropdownActiveClassDisabled: true, // prevents highlighting when not on that docs section
+        },
+        {
+          to: '/blog',
+          label: 'Blog',
+          position: 'right',
+        },
         {
           href: 'https://agentiqs.ai',
           label: 'agentiqs.ai',
