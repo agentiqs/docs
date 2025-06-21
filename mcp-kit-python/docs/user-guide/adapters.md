@@ -15,4 +15,4 @@ See the [Examples section](../examples) for real-world adapter examples with the
 ## Next Steps
 
 - [Examples](../examples) - Real-world usage examples
-- [API Reference](../reference/index.md) - Detailed API documentation
+- [API Reference](../reference/mcp_kit/index.md) - Detailed API documentation

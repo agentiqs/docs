@@ -94,7 +94,7 @@ const config: Config = {
           sidebarId: 'sidebarMcpKitPython',
           docsPluginId: 'mcp-kit-python',
           position: 'left',
-          label: 'mcp-kit Python',
+          label: 'mcp-kit-python',
         },
         {
           type: 'docsVersionDropdown',
@@ -126,7 +126,7 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'mcp-kit Python',
+              label: 'mcp-kit-python',
               to: '/mcp-kit-python/docs',
             },
           ],

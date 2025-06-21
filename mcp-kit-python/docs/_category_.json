@@ -1,8 +1,8 @@
 {
-  "label": "mcp-kit Python",
+  "label": "mcp-kit-python",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Documentation for mcp-kit Python."
+    "description": "Documentation for mcp-kit-python."
   }
 }
