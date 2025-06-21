@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # MCP Client Session Example
 
-**📂 [View Source Code](https://github.com/agentiqs/mcp-kit-python/tree/c9e7dba2b73b1d3eff137a52260c93bd3e87bfb1/examples/mcp_client_session)**
+**📂 [View Source Code](https://github.com/agentiqs/mcp-kit-python/tree/0f830eddfdcc1ee5359a24197da3f2e67774f340/examples/mcp_client_session)**
 This example demonstrates how to use the generic MCP Client Session adapter for connecting to MCP servers.
 
 ## Features
