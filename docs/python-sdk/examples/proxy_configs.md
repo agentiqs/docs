@@ -5,7 +5,7 @@ sidebar_position: 5
 
 # Proxy Configuration Examples
 
-**📂 [View Source Code](https://github.com/agentiqs/mcp-kit-python/tree/309c248c9535a78168c589bc9be2ecc19a8df373/examples/proxy_configs)**
+**📂 [View Source Code](https://github.com/agentiqs/mcp-kit-python/tree/748cd6cdb0b080595b977fd410326a52034cd76a/examples/proxy_configs)**
 This directory contains various proxy configuration examples demonstrating different target types and routing strategies supported by mcp-kit.
 
 ## Configuration Files
