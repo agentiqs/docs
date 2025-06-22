@@ -67,7 +67,7 @@ const config: Config = {
 
         // Set this to true if we want to show docs for the latest version.
         // This would require us to push docs from main via CI.
-        includeCurrentVersion: true,
+        includeCurrentVersion: false,
       },
     ],
   ],
