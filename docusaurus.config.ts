@@ -22,18 +22,9 @@ const config: Config = {
   // Make sure assets use relative paths
   trailingSlash: false,
 
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -73,8 +64,10 @@ const config: Config = {
         path: 'mcp-kit-python',
         routeBasePath: 'mcp-kit-python',
         sidebarPath: './mcp-kit-python/sidebarsMcpKitPython.ts',
-        // ... other options
 
+        // Set this to true if we want to show docs for the latest version.
+        // This would require us to push docs from main via CI.
+        includeCurrentVersion: true,
       },
     ],
   ],
@@ -96,12 +89,12 @@ const config: Config = {
           position: 'left',
           label: 'mcp-kit-python',
         },
-        {
-          type: 'docsVersionDropdown',
-          position: 'left',
-          docsPluginId: 'mcp-kit-python',
-          dropdownActiveClassDisabled: true, // prevents highlighting when not on that docs section
-        },
+        // Re-enable if we want to have a version dropdown in the top navbar
+        // {
+        //   type: 'docsVersionDropdown',
+        //   position: 'left',
+        //   docsPluginId: 'mcp-kit-python',
+        // },
         {
           to: '/blog',
           label: 'Blog',
