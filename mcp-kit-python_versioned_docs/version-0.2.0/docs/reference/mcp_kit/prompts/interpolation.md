@@ -17,7 +17,7 @@ A prompt with interpolation text and optional default values.
 
 **Arguments**:
 
-- `text`: The prompt string with {placeholder} syntax
+- `text`: The prompt string with `{placeholder}` syntax
 - `defaults`: Optional default values for placeholders
 
 ### \_\_post\_init\_\_
@@ -36,7 +36,7 @@ class InterpolationPromptEngine(PromptEngine)
 
 Prompt engine that performs safe string interpolation using predefined prompts.
 
-This engine uses a map of prompt names to InterpolationPrompt objects with {placeholder}
+This engine uses a map of prompt names to InterpolationPrompt objects with `{placeholder}`
 syntax for argument substitution. It performs safe string replacement without
 executing arbitrary code like f-strings would.
 
@@ -62,6 +62,7 @@ def from_config(cls, config: DictConfig) -> Self
 Create InterpolationPromptEngine from configuration.
 
 Expected config format:
+```
 {
     &quot;type&quot;: &quot;interpolation&quot;,
     &quot;prompts&quot;: {
@@ -79,6 +80,7 @@ Expected config format:
         }
     }
 }
+```
 
 **Arguments**:
 
