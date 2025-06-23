@@ -64,18 +64,18 @@ Create InterpolationPromptEngine from configuration.
 Expected config format:
 ```
 {
-    &quot;type&quot;: &quot;interpolation&quot;,
-    &quot;prompts&quot;: {
-        &quot;prompt_name&quot;: {
-            &quot;text&quot;: &quot;Prompt string with {arg1} and {arg2}&quot;,
-            &quot;defaults&quot;: {
-                &quot;arg2&quot;: &quot;default_value&quot;
+    "type": "interpolation",
+    "prompts": {
+        "prompt_name": {
+            "text": "Prompt string with {arg1} and {arg2}",
+            "defaults": {
+                "arg2": "default_value"
             }
         },
-        &quot;another_prompt&quot;: {
-            &quot;text&quot;: &quot;Hello {name}, welcome to {service}!&quot;,
-            &quot;defaults&quot;: {
-                &quot;service&quot;: &quot;our service&quot;
+        "another_prompt": {
+            "text": "Hello {name}, welcome to {service}!",
+            "defaults": {
+                "service": "our service"
             }
         }
     }
